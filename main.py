@@ -4,4 +4,5 @@ app = Flask('')
 @app.route('/')
 def main():
 	return 'sever'
-app.run()
+if __name__="__main__":
+	app.run()
