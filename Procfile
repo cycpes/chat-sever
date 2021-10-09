@@ -1,1 +1,1 @@
-sever: python sever.py
+web: sever app:sever
