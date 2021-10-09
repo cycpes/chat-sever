@@ -1,1 +1,1 @@
-flask: python main.py
+sever: python main.py
