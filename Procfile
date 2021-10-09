@@ -1,1 +1,1 @@
-web: sever sever.py
+web: sever.py
