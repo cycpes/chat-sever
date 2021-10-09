@@ -1,1 +1,1 @@
-sever: python main.py
+sever: python sever.py
