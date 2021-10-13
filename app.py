@@ -3,7 +3,7 @@ from threading import Thread
 
 # server's IP address
 SERVER_HOST = "0.0.0.0"
-SERVER_PORT = 5002 # port we want to use
+SERVER_PORT = 8080 # port we want to use
 separator_token = "<SEP>" # we will use this to separate the client name & message
 
 # initialize list/set of all connected client's sockets
@@ -30,7 +30,7 @@ def listen_for_client(cs):
         except Exception as e:
             # client no longer connected
             # remove it from the set
-            print(f"[!] Error: {e}")
+            print(f"[!] Error {e}")
             client_sockets.remove(cs)
         else:
             # if we received a message, replace the <SEP> 
