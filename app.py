@@ -37,6 +37,8 @@ def listen_for_client(cs):
         # iterate over all connected sockets
         for client_socket in client_sockets:
             # and send the message
+            file=open("msg.txt",mode="a")
+            print(msg,file=file)
             client_socket.send(msg.encode())
 
 
